@@ -11,6 +11,7 @@
 		84E9868920E2DC990047A124 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E9868720E2DC980047A124 /* libglfw.3.2.dylib */; };
 		84E9868A20E2DC990047A124 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E9868820E2DC980047A124 /* libGLEW.2.1.0.dylib */; };
 		84E9868C20E2DF5C0047A124 /* Land.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84E9868B20E2DF5C0047A124 /* Land.cpp */; };
+		84E9869220E2DFE30047A124 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84E9869020E2DFE30047A124 /* Window.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		84E9868720E2DC980047A124 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		84E9868820E2DC980047A124 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		84E9868B20E2DF5C0047A124 /* Land.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Land.cpp; sourceTree = "<group>"; };
+		84E9869020E2DFE30047A124 /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		84E9869120E2DFE30047A124 /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				84E9868B20E2DF5C0047A124 /* Land.cpp */,
+				84E9869020E2DFE30047A124 /* Window.cpp */,
+				84E9869120E2DFE30047A124 /* Window.hpp */,
 			);
 			path = Land;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E9868C20E2DF5C0047A124 /* Land.cpp in Sources */,
+				84E9869220E2DFE30047A124 /* Window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,10 +263,11 @@
 		84E9868220E2DC690047A124 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/glfw/3.2.1/include,
-					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glew/2.1.0/include,
 					/usr/local/Cellar/glm/0.9.9.0/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
@@ -275,10 +282,11 @@
 		84E9868320E2DC690047A124 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/glfw/3.2.1/include,
-					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glew/2.1.0/include,
 					/usr/local/Cellar/glm/0.9.9.0/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
