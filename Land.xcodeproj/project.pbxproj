@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84E9867E20E2DC690047A124 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84E9867D20E2DC690047A124 /* main.cpp */; };
 		84E9868620E2DC730047A124 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E9868520E2DC730047A124 /* OpenGL.framework */; };
 		84E9868920E2DC990047A124 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E9868720E2DC980047A124 /* libglfw.3.2.dylib */; };
 		84E9868A20E2DC990047A124 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E9868820E2DC980047A124 /* libGLEW.2.1.0.dylib */; };
+		84E9868C20E2DF5C0047A124 /* Land.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84E9868B20E2DF5C0047A124 /* Land.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +27,10 @@
 
 /* Begin PBXFileReference section */
 		84E9867A20E2DC690047A124 /* Land */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Land; sourceTree = BUILT_PRODUCTS_DIR; };
-		84E9867D20E2DC690047A124 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		84E9868520E2DC730047A124 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		84E9868720E2DC980047A124 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		84E9868820E2DC980047A124 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		84E9868B20E2DF5C0047A124 /* Land.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Land.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 		84E9867C20E2DC690047A124 /* Land */ = {
 			isa = PBXGroup;
 			children = (
-				84E9867D20E2DC690047A124 /* main.cpp */,
+				84E9868B20E2DF5C0047A124 /* Land.cpp */,
 			);
 			path = Land;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E9867E20E2DC690047A124 /* main.cpp in Sources */,
+				84E9868C20E2DF5C0047A124 /* Land.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

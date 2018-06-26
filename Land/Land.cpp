@@ -1,5 +1,5 @@
 //
-//  main.cpp
+//  Land.cpp
 //  Land
 //
 //  Created by Dexter Burk on 6/26/18.
@@ -8,6 +8,7 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-   
+int main()
+{
+    std::cout << "Console application starting..." << std::endl;
 }
